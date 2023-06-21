@@ -21,9 +21,9 @@ public class Main {
         holub.makeSound();
         holub.move();
 
-        PaymentMethod karta = new PaymentMethod.CreditCard();
-        PaymentMethod papa = new PaymentMethod.PayPal();
-        PaymentMethod penezenka = new PaymentMethod.Cash();
+        PaymentMethod karta = new CreditCard();
+        PaymentMethod papa = new PayPal();
+        PaymentMethod penezenka = new Cash();
         karta.processPayment(3.50);
         papa.processPayment(123);
         penezenka.processPayment(99);
